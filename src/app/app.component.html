@@ -1,4 +1,41 @@
-<div class="main-container">
-  App is Rock!
-  <button class="text-red-50">Click me!</button>
+<div class="main-container p-12">
+  <div class="header h-16">
+    3. Form Elements
+  </div>
+  <div class="content mt-8">
+  <div class="content-header mb-4">
+    3.1 Text Input
+  </div>
+    <form fxFlex [formGroup]="form">
+    <div class="flex flex-wrap -mx-1 overflow-hidden">
+
+      <div class="my-1 px-1 w-1/6 overflow-hidden sm:w-full md:w-1/2 lg:w-1/6 xl:w-1/6">
+        <app-input-default [form]="form"></app-input-default>
+      </div>
+
+      <div class="my-1 px-1 w-1/6 overflow-hidden sm:w-full md:w-1/2 lg:w-1/6 xl:w-1/6">
+        <app-input-focused [form]="form"></app-input-focused>
+      </div>
+
+      <div class="my-1 px-1 w-1/6 overflow-hidden sm:w-full md:w-1/2 lg:w-1/6 xl:w-1/6">
+        <app-input-completed [form]="form"></app-input-completed>
+      </div>
+
+      <div class="my-1 px-1 w-1/6 overflow-hidden sm:w-full md:w-1/2 lg:w-1/6 xl:w-1/6">
+        <app-input-auto-clear [form]="form"></app-input-auto-clear>
+      </div>
+
+      <div class="my-1 px-1 w-1/6 overflow-hidden sm:w-full md:w-1/2 lg:w-1/6 xl:w-1/6">
+        <app-input-error [form]="form"></app-input-error>
+      </div>
+
+      <div class="my-1 px-1 w-1/6 overflow-hidden sm:w-full md:w-1/2 lg:w-1/6 xl:w-1/6">
+        <app-input-disabled [form]="form"></app-input-disabled>
+      </div>
+
+    </div>
+    </form>
+  </div>
 </div>
+<div>{{form.value | json}}</div>
+<div>{{form.valid | json}}</div>

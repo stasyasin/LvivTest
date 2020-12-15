@@ -1,0 +1,9 @@
+<div [formGroup]="form">
+  <div class="com-header mb-4">
+    3.1.6 Disabled
+  </div>
+  <mat-form-field>
+    <mat-label>Input label</mat-label>
+    <input name="disabled" readonly formControlName="disabled" matInput [value]="form.value.disabled">
+  </mat-form-field>
+</div>

@@ -1,0 +1,8 @@
+:host {
+  color: var(--color-neutral);
+}
+:host ::ng-deep .mat-button-ripple.mat-ripple,
+:host ::ng-deep .mat-button-focus-overlay {
+  top: -1px;
+  bottom: 1px;
+}

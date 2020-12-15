@@ -1,0 +1,16 @@
+.main-container {
+  font-family: Roboto, serif;
+
+  .header {
+    border-bottom: 1px solid rgba(38, 50, 56, 0.25);
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .content {
+    .content-header {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}

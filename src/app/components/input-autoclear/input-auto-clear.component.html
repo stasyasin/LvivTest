@@ -1,0 +1,10 @@
+<div [formGroup]="form">
+  <div class="com-header mb-4">
+    3.1.4 Autoclear
+  </div>
+  <mat-form-field>
+    <mat-label>Input label</mat-label>
+    <input name="autoClear" formControlName="autoClear" matInput [value]="form.value.autoClear">
+    <app-clear-input-button matSuffix [control]="form.controls.autoClear"></app-clear-input-button>
+  </mat-form-field>
+</div>
