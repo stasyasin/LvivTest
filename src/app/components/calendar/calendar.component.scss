@@ -1,0 +1,55 @@
+.container {
+  width: 382px;
+  background-color: #F9F9F9;
+  border-radius: 12px;
+
+  .cal-header {
+    .month {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      color: #084734;
+    }
+
+    .week {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      color: #263238;
+    }
+  }
+
+  .cal-week {
+    .day-cell {
+      height: 42px;
+      width: 40px;
+
+      .day {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        text-align: center;
+        color: #263238;
+      }
+
+      .date {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px;
+        text-align: center;
+        color: #263238;
+      }
+
+      &.selected {
+        border-radius: 4px;
+        background-color: rgba(8, 71, 52, 0.1);
+      }
+    }
+  }
+}
